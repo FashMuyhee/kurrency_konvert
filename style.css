@@ -1,0 +1,13 @@
+body{
+   background-color:#7edeea;
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+   height: -webkit-fill-available;
+}
+
+.uk-form-success,
+.uk-form-success:focus {
+  color: #4bacb8;
+  border-color: #4bacb8;
+}
