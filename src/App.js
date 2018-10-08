@@ -14,13 +14,6 @@ const options = {
   transition: "fade",
 }
 
-/* const theme = createMuiTheme({
-  palette: {
-    primary: { main:"#2ee7e7"},
-    secondary:{main: "#ffc117"}
-  },
-}); */
-
 class App extends Component {
   render() {
     return (
