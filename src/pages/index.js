@@ -11,7 +11,7 @@ class Index extends Component {
 		return (
 			<div className="uk-align-center uk-container uk-overflow-hidden">
 				<div className="uk-position-center">
-					<img src="/favicon.png" className="uk-align-center uk-box-shadow-small" style={{ borderRadius: 35 }}/>
+					<img src="/favicon.png" className="uk-align-center uk-box-shadow-small" alt="logo" style={{ borderRadius: 35,height:90 }}/>
 					<h2 className="uk-text-capitalize uk-text-center uk-text-large uk-text-bold" style={{ color:'white',fontSize: '38px'}}>Kurrency Konverter</h2>
 					<p className="uk-text-lead uk-text-center" style={{  fontStyle : 'italics' }}>...get world's foreign currencies conversion rates</p>
 					<Link className="uk-button uk-button-large uk-border-rounded uk-align-center my-btn uk-width-medium" to="/convert">Get Started</Link>
