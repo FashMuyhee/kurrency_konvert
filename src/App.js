@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Index from './pages/index';
-// import Conversion from './pages/conversion';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Convert from './pages/convert';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Error from './pages/error';
-// import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import { Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic';
@@ -18,7 +17,12 @@ class App extends Component {
   render() {
     return (
       <AlertProvider template={AlertTemplate} {...options}>
-        <Index />
+        <Router>
+          <Switch>
+            <Route path="/" exact component={Index} />
+            <Route path="/convert" component={Convert} />
+          </Switch>
+        </Router>
       </AlertProvider>
     );
   }
